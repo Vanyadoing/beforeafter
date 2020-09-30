@@ -1,0 +1,171 @@
+.aligncenter{
+	position: absolute;
+	top: 60%;
+ 	left: 50%;
+  	transform: translate(-50%, -50%);
+	margin: 0;
+}
+.img1{
+    position: relative;/*для резины*/
+    max-width: 100%;
+    -webkit-transition-property:opacity, z-index;
+    -webkit-transition-duration:1s;
+    -moz-transition-property:opacity, z-index;
+    -moz-transition-duration:1s;
+    -o-transition-property:opacity, z-index;
+    -o-transition-duration:1s;
+    transition-property:opacity, z-index;
+    transition-duration:1s;
+    opacity: 1; /*не прозрачная только первая картинка*/
+    z-index: 1;
+}
+
+.img2 {
+    position: absolute;
+	height: 100%;
+	width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    -webkit-transition-property:opacity, z-index;
+    -webkit-transition-duration:1s;
+    -moz-transition-property:opacity, z-index;
+    -moz-transition-duration:1s;
+    -o-transition-property:opacity, z-index;
+    -o-transition-duration:1s;
+    transition-property:opacity, z-index;
+    transition-duration:1s;
+    opacity: 1;/*все остальные прозрачные*/
+
+}
+
+img{
+    max-width: 100%;/*картинка резиновая*/
+    vertical-align: middle;
+
+}
+
+
+ 
+ .discript1, .discript2 {
+    position: absolute;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 2%;
+    padding: 1%;
+}
+.tank h3{
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    margin-bottom: 1%;
+	margin-left: 1%;
+    font-family: Luxia;
+}
+.tank p{
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+    font-family: Luxia;
+}
+   
+
+.but1 {
+	color:#626262 ;
+    position: absolute;
+    width: 48%;
+    height: 10%;
+    background: transparent;
+    bottom: 101%;
+    left: 1%;
+    right: 0;
+    cursor: pointer;
+    z-index: 1000;
+ 	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	}
+.but2 {
+	color:#626262 ;
+    position: absolute;
+    width: 48%;
+    height: 10%;
+    background: transparent;
+    bottom: 101%;
+    left: 51%;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+ 	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	
+}
+/*действие меняющее слайд*/
+.but1:focus ~ .b1, .but2:focus ~ .b2 {
+    color:black;
+}
+.b1, .b2 {
+	color:#626262 ;
+}
+.befaf{
+	position: absolute;
+	top: 50%;
+ 	left: 50%;
+  	transform: translate(-50%, -50%);
+	margin: 0;
+}
+.round1 {
+	color:#626262 ;
+    position: absolute;
+    width: 48%;
+    height: 10%;
+    background: transparent;
+    bottom: 101%;
+    left: 1%;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+ 	border-style: none;
+	border-width: 0px 0px 1px 0px;
+}
+.round2 {
+	color:#626262 ;
+    position: absolute;
+    width: 48%;
+    height: 10%;
+    background: transparent;
+    bottom: 101%;
+    left: 51%;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+ 	border-style: solid;
+	border-width: 0px 0px 0px 0px;
+}
+
+
+/*действие меняющее слайд*/
+.but1:focus ~ .img1, .but2:focus ~ .img2 {
+    opacity: 1;
+    z-index: 15;
+	color:black ;
+}
+ /*делаем кнопку в фокусе серой. */
+.but1:focus, .but2:focus {
+    background-color:#FFFEFC ;
+	outline:none;
+	color:black ;
+	
+
+}
+
+@media only screen and (max-width:740px) {
+    .tank p{
+        display: none;
+     }
+     .tank h3{
+        font-size: 14px;
+        text-align: center;
+     }
+}
